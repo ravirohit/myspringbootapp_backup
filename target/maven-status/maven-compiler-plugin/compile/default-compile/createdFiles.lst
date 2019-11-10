@@ -1,0 +1,4 @@
+com\learn\mainapp\MainApp.class
+com\learn\resource\FunctionalController.class
+com\learn\reqres\model\LoginReqest.class
+com\learn\resource\UserController.class
