@@ -29,7 +29,7 @@ public class FileOperationRepository {
 		String str = "from FilesEntity where email='"+email+"'";
 		Session session =  sessionFactory.openSession();
 		Query query = session.createQuery(str);
-		query.setMaxResults(1);
+	//	query.setMaxResults(1);
 		List<FilesEntity> list = query.list();
 		return list;
 	}
