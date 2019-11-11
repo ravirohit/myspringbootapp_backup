@@ -2614,3 +2614,48 @@ javax.management.InstanceNotFoundException: org.apache.commons.dbcp2:name=dataSo
 2019-11-11 13:21:22.878  INFO 18756 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
 2019-11-11 13:21:23.089  INFO 18756 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 211 ms
 2019-11-11 13:21:24.087  INFO 18756 --- [http-nio-8080-exec-1] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2019-11-11 13:39:26.502  INFO 18276 --- [main] com.learn.mainapp.MainApp                : Starting MainApp on FIB3GAAOIQ with PID 18276 (C:\Project_Work\Other_learn\eclipse_workspace_learn\myspringbootapp\target\classes started by raviro in C:\Project_Work\Other_learn\eclipse_workspace_learn\myspringbootapp)
+2019-11-11 13:39:26.525  INFO 18276 --- [main] com.learn.mainapp.MainApp                : No active profile set, falling back to default profiles: default
+2019-11-11 13:39:26.825  INFO 18276 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@55b7a4e0: startup date [Mon Nov 11 13:39:26 IST 2019]; root of context hierarchy
+2019-11-11 13:39:34.131  INFO 18276 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$63cf8945] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-11 13:39:37.143  INFO 18276 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2019-11-11 13:39:37.307  INFO 18276 --- [main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2019-11-11 13:39:37.316  INFO 18276 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.6
+2019-11-11 13:39:38.428  INFO 18276 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-11-11 13:39:38.429  INFO 18276 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 11611 ms
+2019-11-11 13:39:39.520  INFO 18276 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2019-11-11 13:39:39.545  INFO 18276 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-11-11 13:39:39.546  INFO 18276 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-11-11 13:39:39.548  INFO 18276 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-11-11 13:39:39.549  INFO 18276 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-11-11 13:39:40.473  INFO 18276 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2019-11-11 13:39:40.570  INFO 18276 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-11-11 13:39:41.127  INFO 18276 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.11.Final}
+2019-11-11 13:39:41.138  INFO 18276 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-11-11 13:39:41.146  INFO 18276 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2019-11-11 13:39:41.465  INFO 18276 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2019-11-11 13:39:42.942  INFO 18276 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-11-11 13:39:44.988  INFO 18276 --- [main] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000228: Running hbm2ddl schema update
+2019-11-11 13:39:45.368  INFO 18276 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-11-11 13:39:46.716  INFO 18276 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@55b7a4e0: startup date [Mon Nov 11 13:39:26 IST 2019]; root of context hierarchy
+2019-11-11 13:39:47.030  INFO 18276 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getfiles],methods=[GET],produces=[application/json]}" onto public java.util.List<com.learn.db.entity.FilesEntity> com.learn.resource.FunctionalController.getFiles()
+2019-11-11 13:39:47.040  INFO 18276 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/filesupload],methods=[POST],consumes=[application/json]}" onto public java.lang.String com.learn.resource.FunctionalController.filesUpload(com.learn.reqres.model.FileUploadReq)
+2019-11-11 13:39:47.056  INFO 18276 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/isalive],methods=[GET]}" onto public java.lang.String com.learn.resource.UserController.heartBeatTest()
+2019-11-11 13:39:47.057  INFO 18276 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/login],methods=[POST]}" onto public java.lang.String com.learn.resource.UserController.login(com.learn.reqres.model.LoginReqest)
+2019-11-11 13:39:47.067  INFO 18276 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-11-11 13:39:47.072  INFO 18276 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-11-11 13:39:47.252  INFO 18276 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-11-11 13:39:47.253  INFO 18276 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-11-11 13:39:47.664  INFO 18276 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-11-11 13:39:47.896  INFO 18276 --- [main] oConfiguration$WelcomePageHandlerMapping : Adding welcome page: ServletContext resource [/index.html]
+2019-11-11 13:39:50.274  INFO 18276 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2019-11-11 13:39:50.283  INFO 18276 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2019-11-11 13:39:50.315  INFO 18276 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [org.apache.commons.dbcp2:name=dataSource,type=BasicDataSource]
+2019-11-11 13:39:50.609  INFO 18276 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2019-11-11 13:39:50.629  INFO 18276 --- [main] com.learn.mainapp.MainApp                : Started MainApp in 26.396 seconds (JVM running for 28.263)
+2019-11-11 13:40:01.291  INFO 18276 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-11-11 13:40:01.293  INFO 18276 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2019-11-11 13:40:01.426  INFO 18276 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 133 ms
+2019-11-11 13:40:01.979  INFO 18276 --- [http-nio-8080-exec-1] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
